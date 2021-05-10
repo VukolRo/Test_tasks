@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>The Tester</title>
+<style>
+   .layer1 {
+        position: relative; /* Относительное позиционирование */
+        background: #f5ecda; /* Цвет фона */
+        height: 100px; /* Высота блока */
+        border: 1;
+        width: 100%; 
+        border-radius:5px;
+    }
+   .layer2 {
+        position: absolute; /* Абсолютное позиционирование */
+        bottom: 15px; /* Положение от нижнего края */
+        color: #ffffff;
+        right: 15px; /* Положение от правого края */
+        line-height: 1px;
+    }
+</style>
+</head>
+<body>
+<table
+border="1"
+align="center"
+rules="rows"
+style="width:60%;">
+<tr>
+<td>
+<!--ШАПКА САЙТА-->
+<table class="layer1">
+<tr>
+<th>
+<h1>The Tester</h1>
+<div data-layout="BIG_ICON_DETAILS_SUBTOTAL"
+data-icon="CART"
+data-fixed-shape="PILL" 
+data-horizontal-indent="325" 
+data-vertical-indent="25" class="ec-cart-widget layer2"></div>
+<div>
+    <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?9967568&data_platform=code&data_date=2019-10-24" charset="utf-8"></script>
+    <script type="text/javascript">Ecwid.init();</script>
+</div>
+</th>
+</tr>
+</table>
+
+<!--ОСНОВНОЙ КОНТЕНТ-->
+
+<table
+border="1"
+bgcolor="#ebe0ca"
+cellpadding="10"
+style="width:100%; border-radius:5px;">
+<tr>
+<td
+rowspan="2"
+style="width:80%">
+<h2>All about data-layout</h2>
+<p style="text-indent:20px">
+You can change the layout of the shopping bag by adding the parameter data-layout to the "ec-cart-widget" container in the integration code.</p>
+
+<p style="text-indent:20px"> <b>&#60;data-layout="VALUE"&#62;</b></p>
+<p style="text-indent:20px"> Where VALUE is one of the supported values for the data-layout parameter:
+    <ul>
+        <li>SMALL_ICON</li>
+        <li>SMALL_ICON_COUNTER</li>
+        <li>COUNTER_ONLY</li>
+        <li>TITLE_COUNTER</li>
+        <li>MEDIUM_ICON_COUNTER</li>
+        <li>MEDIUM_ICON_TITLE_COUNTER</li>
+        <li>BIG_ICON_TITLE_SUBTOTAL</li>
+        <li>BIG_ICON_DETAILS_SUBTOTAL</li>
+    </ul>
+</p>
+<p>You can also use <b>&#60;data-show-empty-cart="VALUE"&#62;</b> with TRUE or FALSE as value for show or hide the shopping bag when it’s empty.</p>
+<p>Or you can change the default shopping bag icon <b>&#60;data-icon="VALUE&#62;</b> where values might be BAG, CART or BASKET.</p>
+<p>Or you can change the shape of the border around the shopping bag <b>&#60;data-fixed-shape="VALUE"&#62;</b>
+where values might be NON, RECT or PILL.</p>
+<p>Or you can change the shopping bag position <b>&#60;data-fixed="VALUE"&#62;
+    &#60;data-fixed-position="VALUE"&#62; 
+    &#60;data-horizontal-indent="VALUE"&#62; 
+    &#60;data-vertical-indent="VALUE"&#62;</b>
+ where values for <b>data-fixed</b> might be TRUE or FALSE, for <b>data-fixed-position</b> 
+ <ul>
+    <li>TOP_LEFT</li>
+    <li>TOP_RIGHT</li>
+    <li>BOTTOM_LEFT</li>
+    <li>BOTTOM_RIGHT</li>
+</ul>
+and values for <b>data-horizontal-indent</b> and <b>data-vertical-indent</b> is a positive integer including zero.</p>
+<p>Or you can disable responsiveness of the shopping bag widget to make it look the same in different screen sizes, 
+    desktop and mobile with <b>&#60;data-responsive="VALUE"&#62;</b>. Use TRUE value and the cart will automatically adapt to different 
+    screen sizes, or FALSE and the cart will have the same design on different screen sizes.</p>
+<p>Finally, you can use a custom shopping bag icon on your website with <b>&#60;data-responsive="VALUE"&#62;</b>. 
+Where value is URL to your image or SVG markup.</p>
+</td>
+
+<!--ПОДВАЛ-->
+
+<table
+border="1"
+bgcolor="#ddc5ab"
+height="100"
+cellpadding="10"
+style="width:100%; border-radius:5px;">
+<tr>
+<th>
+<h3>First test task for QA engineer for Ecwid made by R. Vukolov.</h3>
+</th>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
